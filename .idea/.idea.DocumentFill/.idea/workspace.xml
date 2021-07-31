@@ -4,21 +4,8 @@
     <projectFile>DocumentFill/DocumentFill.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="Working">
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/PatternFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/PatternsContainerFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" afterDir="false" />
+    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +22,11 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/Properties/Settings.Designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Проекты/DocumentFill/DocumentFillTests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -100,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627745987288</updated>
-      <workItem from="1627746013816" duration="3748000" />
+      <workItem from="1627746013816" duration="5217000" />
     </task>
     <task id="LOCAL-00001" summary="Работа над проектом">
       <created>1627746109734</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627746812303</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working">
+      <created>1627751073198</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627751073198</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
