@@ -40,6 +40,8 @@
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamDay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/Instructor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Проекты/DocumentFill/DocumentFillTests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -158,6 +160,7 @@
       <updated>1627758700196</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
