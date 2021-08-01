@@ -12,17 +12,17 @@ namespace DocumentFill.Model
         /// <summary>
         /// Таблица
         /// </summary>
-        DataTable                Table       { get; }
+        DataTable Table { get; set; }
         /// <summary>
         /// Словарь
         /// </summary>
         /// <remarks>
         /// Ключ - номер столбца в таблице, значение - заменяемое имя
         /// </remarks>
-        Dictionary <int, String> KeyInTable  { get; }
+        Dictionary <int, String> KeyInTable { get; set; }
         /// <summary>
         /// Список всех указанных шаблонов
         /// </summary>
-        List<String>             PatternName { get; }
+        List<String> PatternName { get; set; }
     }
 }

@@ -12,6 +12,13 @@
       <change beforePath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +42,12 @@
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/CandidateInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/SharedViewLogic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/3D5/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/Main.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamDay.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/Instructor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Проекты/DocumentFill/DocumentFillTests/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -49,20 +55,20 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternFactory.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainerFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w5QU25dE4jYFs8jc0miumT2MXG" />
@@ -70,6 +76,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -116,6 +123,7 @@
       <workItem from="1627758998744" duration="891000" />
       <workItem from="1627760184179" duration="128000" />
       <workItem from="1627762654649" duration="488000" />
+      <workItem from="1627763575741" duration="8311000" />
     </task>
     <task id="LOCAL-00001" summary="Работа над проектом">
       <created>1627746109734</created>
@@ -159,7 +167,6 @@
       <option name="project" value="LOCAL" />
       <updated>1627758700196</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>

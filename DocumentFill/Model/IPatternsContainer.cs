@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace DocumentFill.Model
@@ -6,7 +7,7 @@ namespace DocumentFill.Model
     /// <summary>
     /// Контейнер шаблонов
     /// </summary>
-    public interface IPatternsContainer : IEnumerable<IPattern>
+    public interface IPatternsContainer : IEnumerable
     {
         /// <summary>
         /// Словарь

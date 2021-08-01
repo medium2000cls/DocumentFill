@@ -5,18 +5,22 @@ namespace DocumentFill.Model.Control
     /// </summary>
     public interface ISourceData
     {
-        IDataTableContainer TableContainer { get; set; }
-        // IPatternsContainer  Patterns       { get; set; }
+        string              FileTablePath      { get; set; }
+        IDataTableContainer TableContainer     { get; set; }
+        string              PatternsFolderPath { get; set; }
+        IPatternsContainer  Patterns           { get; set; }
+
         /// <summary>
         /// Получить исходные данные из XLSX
         /// </summary>
         /// <param name="fileTablePath">Путь к файлу XLSX</param>
-        void GetSourceDataTable(string fileTablePath);
+        void GetSourceDataTable();
+        
         /// <summary>
         /// Получить исходные данные о файлах шаблонах в папке
         /// </summary>
         /// <param name="patternsFolderPath">Путь к папке с шаблонами</param>
-        void GetSourceDataPatterns(string patternsFolderPath);
+        void GetSourceDataPatterns();
         
     }
 }
