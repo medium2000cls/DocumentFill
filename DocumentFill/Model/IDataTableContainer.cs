@@ -24,5 +24,15 @@ namespace DocumentFill.Model
         /// Список всех указанных шаблонов
         /// </summary>
         List<String> PatternName { get; set; }
+
+        /// <summary>
+        /// Заполнение списка имен шаблонов
+        /// </summary>
+        public List<String> FillingInListPatternNames(DataTable table);
+
+        /// <summary>
+        /// Загрузить данные в список заменяемых имен
+        /// </summary>
+        public Dictionary<int, String> AddDataInKeyInTable(DataTable table);
     }
 }

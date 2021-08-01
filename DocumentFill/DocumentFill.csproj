@@ -7,12 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Update="Model\DataTableContainerFactory.cs">
-        <DependentUpon>IDataTableContainer.cs</DependentUpon>
-      </Compile>
-      <Compile Update="Model\PatternsContainerFactory.cs">
-        <DependentUpon>IPatternsContainer.cs</DependentUpon>
-      </Compile>
       <Compile Update="Model\DocumentFactory.cs">
         <DependentUpon>IDocument.cs</DependentUpon>
       </Compile>
