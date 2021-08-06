@@ -19,20 +19,10 @@ namespace DocumentFill.Model
         /// <remarks>
         /// Ключ - номер столбца в таблице, значение - заменяемое имя
         /// </remarks>
-        Dictionary <int, String> KeyInTable { get; set; }
+        Dictionary<int, String> KeyInTable { get; }
         /// <summary>
         /// Список всех указанных шаблонов
         /// </summary>
-        List<String> PatternName { get; set; }
-
-        /// <summary>
-        /// Заполнение списка имен шаблонов
-        /// </summary>
-        public List<String> FillingInListPatternNames(DataTable table);
-
-        /// <summary>
-        /// Загрузить данные в список заменяемых имен
-        /// </summary>
-        public Dictionary<int, String> AddDataInKeyInTable(DataTable table);
+        List<String> PatternName { get; }
     }
 }

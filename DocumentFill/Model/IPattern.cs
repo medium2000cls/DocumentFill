@@ -11,10 +11,10 @@ namespace DocumentFill.Model
         /// <summary>
         /// Имя шаблона
         /// </summary>
-        String        Name         { get; }
+        String Name { get; }
         /// <summary>
         /// Список фраз из шаблона которые должны быть заменены
         /// </summary>
-        List <String> KeyInPattern { get; }
+        List<String> KeyInPattern { get; }
     }
 }
