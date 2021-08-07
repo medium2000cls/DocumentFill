@@ -33,12 +33,13 @@ namespace DocumentFill.Model
             _sourceDataPatterns = null;
             _patterns = null;
 
+            CompletionDataTableContainer();
             _sourceData = new SourceData(_dataTable, _sourceDataPatterns, _fileTablePath, _patternsFolderPath);
             _dataTableContainer = new DataTableContainer(_dataTable);
             _patternsContainer = new PatternsContainer(_patterns);
         }
 
-        public void CompletionDataTableContainer()
+        private void CompletionDataTableContainer()
         {
             _sourceData.GetSourceDataTable();
         }

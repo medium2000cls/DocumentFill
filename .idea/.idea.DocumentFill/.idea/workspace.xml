@@ -7,21 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" afterDir="false" />
+    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="Working on the project">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/MainForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/PatternFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/PatternFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFillTests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFillTests/DataTableContainerTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,6 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/Document.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainerFactory.cs" />
@@ -74,6 +62,7 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w5QU25dE4jYFs8jc0miumT2MXG" />
@@ -134,7 +123,7 @@
       <workItem from="1627831404314" duration="12728000" />
       <workItem from="1628101195618" duration="2547000" />
       <workItem from="1628111812966" duration="3484000" />
-      <workItem from="1628273792143" duration="6479000" />
+      <workItem from="1628273792143" duration="9053000" />
     </task>
     <task id="LOCAL-00001" summary="Работа над проектом">
       <created>1627746109734</created>
@@ -171,14 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627846220561</updated>
     </task>
-    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.DocumentFill/.idea/workspace.xml&#10;#&#9;DocumentFill/DocumentFill.csproj">
-      <created>1627758700196</created>
+    <task id="LOCAL-00006" summary="Working on the project">
+      <created>1628280841684</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1627758700196</updated>
+      <updated>1628280841684</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +192,8 @@
     <MESSAGE value="Working" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.DocumentFill/.idea/workspace.xml&#10;#&#9;DocumentFill/DocumentFill.csproj" />
     <MESSAGE value="Работа над проектом" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа над проектом" />
+    <MESSAGE value="Working on the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
