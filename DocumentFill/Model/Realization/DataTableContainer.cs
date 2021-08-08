@@ -17,39 +17,15 @@ namespace DocumentFill.Model
 
         private Dictionary<int, string> _keyInTable;
         private List<string>            _patternName;
-        
         public  DataTable               Table { get; set; }
-        
-        public Dictionary<int, string>  KeyInTable
+        public Dictionary<int, string> KeyInTable
         {
-            get
-            {
-                if (_keyInTable == null)
-                {
-                    _keyInTable = AddDataInKeyInTable(Table);
-                    return _keyInTable;
-                }
-                else
-                {
-                    return _keyInTable;
-                }
-            }
+            get { return _keyInTable ??= AddDataInKeyInTable(Table); }
             private set => _keyInTable = value;
         }
-        public List<string>             PatternName
+        public List<string> PatternName
         {
-            get
-            {
-                if (_patternName == null)
-                {
-                    _patternName = FillingInListPatternNames(Table);
-                    return _patternName;
-                }
-                else
-                {
-                    return _patternName;
-                }
-            }
+            get { return _patternName ??= FillingInListPatternNames(Table); }
             private set => _patternName = value;
         }
 

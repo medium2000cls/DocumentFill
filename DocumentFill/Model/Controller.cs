@@ -1,56 +1,61 @@
 using System.Collections.Generic;
 using System.Data;
-using DocumentFill.Model.Control;
+using System.IO;
+using DocumentFill.Model.External;
+using DocumentFill.Model.Wrapper;
 
 namespace DocumentFill.Model
 {
     public class Controller
     {
-        public Controller(string fileTablePath, string patternsFolderPath, DataTable dataTable, List<string> sourceDataPatterns, Dictionary<string, IPattern> patterns)
+        public Controller(string fileTablePath, string patternsFolderPath, DataTable dataTable, List<string> dataPatterns, List<IPattern> patterns)
         {
             _fileTablePath = fileTablePath;
             _patternsFolderPath = patternsFolderPath;
             _dataTable = dataTable;
-            _sourceDataPatterns = sourceDataPatterns;
+            _dataPatterns = dataPatterns;
             _patterns = patterns;
         }
 
-        private string                       _fileTablePath;
-        private string                       _patternsFolderPath;
-        private DataTable                    _dataTable;
-        private List<string>                 _sourceDataPatterns;
-        private Dictionary<string, IPattern> _patterns;
+        private string       _fileTablePath;
+        private string       _patternsFolderPath;
+        private DataTable    _dataTable;
+        private List<string> _dataPatterns;
+        private List<IPattern>       _patterns;
         
         private ISourceData         _sourceData;
         private IDataTableContainer _dataTableContainer;
-        private IPatternsContainer  _patternsContainer;
-
+        
+        /// <summary>
+        /// Связывание компонентов
+        /// </summary>
         public void Initialise()
         {
             _fileTablePath = null;
             _patternsFolderPath = null;
             _dataTable = null;
-            _sourceDataPatterns = null;
+            _dataPatterns = null;
             _patterns = null;
 
-            _sourceData = new SourceData(_dataTable, _sourceDataPatterns, _fileTablePath, _patternsFolderPath);
+            _sourceData = new SourceData(_dataTable, _dataPatterns, _fileTablePath, _patternsFolderPath);
             _dataTableContainer = new DataTableContainer(_dataTable);
-            _patternsContainer = new PatternsContainer(_patterns);
         }
 
-        private void GetSourceDataTableContainer()
+       
+        public List<IPattern> GetWorkPattern(List<string> patternsNameFromTable, List<string> patternsNameFromDirectory)
         {
-            _sourceData.GetSourceDataTable();
-        }
-
-        private void GetSourceDataPatternsContainer()
-        {
-            _sourceData.GetSourceDataPatterns();
-        }
-        
-        public void AddWorkPatternInPatternsContainer(List<string> patternsNameFromTable, List<string> patternsNameFromDirectory)
-        {
-            
+            //todo Возможны ошибки, связанные с полным и неполным имененем шаблона
+            List<IPattern> patterns = new List<IPattern>();
+            foreach (var el in patternsNameFromTable)
+            {
+                var t = patternsNameFromDirectory.Find(s => s == el);
+                if (!string.IsNullOrEmpty(t))
+                {
+                    var pattern = new Pattern(new FileInfoWrapper(new FileInfo(t)));
+                    patterns.Add(pattern);
+                }
+            }
+            return patterns;
         }
 
         

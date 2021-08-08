@@ -10,9 +10,6 @@
       <Compile Update="Model\DocumentFactory.cs">
         <DependentUpon>IDocument.cs</DependentUpon>
       </Compile>
-      <Compile Update="Model\PatternFactory.cs">
-        <DependentUpon>IPattern.cs</DependentUpon>
-      </Compile>
     </ItemGroup>
 
     <ItemGroup>

@@ -1,18 +1,33 @@
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
 using ExcelDataReader;
 
-namespace DocumentFill.Model.Control
+namespace DocumentFill.Model.External
 {
+    /// <inheritdoc />
     public class SourceData : ISourceData
     {
-        public DataTable    SourceDataTable    { get; set; }
-        public List<string> SourceDataPatterns { get; set; }
-        public string       FileTablePath      { get; set; }
-        public string       PatternsFolderPath { get; set; }
+        #region Приватные поля
+
+        private List<string> _sourceDataPatterns;
+        private DataTable    _sourceDataTable;
+
+        #endregion
+
+        public DataTable SourceDataTable
+        {
+            get { return _sourceDataTable ??= GetSourceDataTable(); }
+            private set => _sourceDataTable = value;
+        }
+        public List<string> SourceDataPatterns
+        {
+            get { return _sourceDataPatterns ??= GetSourceDataPatterns(); }
+            private set => _sourceDataPatterns = value;
+        }
+        public  string       FileTablePath      { get; set; }
+        public  string       PatternsFolderPath { get; set; }
 
         public SourceData(DataTable sourceDataTable, List<string> sourceDataPatterns, string fileTablePath, string patternsFolderPath)
         {
@@ -22,7 +37,7 @@ namespace DocumentFill.Model.Control
             PatternsFolderPath = patternsFolderPath;
         }
 
-        public void GetSourceDataTable()
+        public DataTable GetSourceDataTable()
         {
             DataSet repData;
             using (var stream = File.Open(FileTablePath, FileMode.Open, FileAccess.Read))
@@ -38,13 +53,13 @@ namespace DocumentFill.Model.Control
                     repData = reader.AsDataSet();
                 }
             }
-            SourceDataTable = repData.Tables[0];
+            return repData.Tables[0];
         }
 
-        public void GetSourceDataPatterns()
+        public List<string> GetSourceDataPatterns()
         {
-            var d = Directory.GetFiles(PatternsFolderPath, "*.doc", SearchOption.TopDirectoryOnly).ToList();
-            SourceDataPatterns = d;
+            List<string> d = Directory.GetFiles(PatternsFolderPath, "*.doc", SearchOption.TopDirectoryOnly).ToList();
+            return d;
         }
         
 
