@@ -19,7 +19,8 @@ namespace DocumentFill.Model
         private List<string>            _patternName;
         
         public  DataTable               Table { get; set; }
-        public Dictionary<int, string> KeyInTable
+        
+        public Dictionary<int, string>  KeyInTable
         {
             get
             {
@@ -35,7 +36,7 @@ namespace DocumentFill.Model
             }
             private set => _keyInTable = value;
         }
-        public List<string> PatternName
+        public List<string>             PatternName
         {
             get
             {

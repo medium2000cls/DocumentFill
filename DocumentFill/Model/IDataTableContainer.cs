@@ -14,7 +14,7 @@ namespace DocumentFill.Model
         /// </summary>
         DataTable Table { get; set; }
         /// <summary>
-        /// Словарь
+        /// Словарь со списком заменяемых имен из таблицы
         /// </summary>
         /// <remarks>
         /// Ключ - номер столбца в таблице, значение - заменяемое имя

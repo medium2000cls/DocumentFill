@@ -33,16 +33,26 @@ namespace DocumentFill.Model
             _sourceDataPatterns = null;
             _patterns = null;
 
-            CompletionDataTableContainer();
             _sourceData = new SourceData(_dataTable, _sourceDataPatterns, _fileTablePath, _patternsFolderPath);
             _dataTableContainer = new DataTableContainer(_dataTable);
             _patternsContainer = new PatternsContainer(_patterns);
         }
 
-        private void CompletionDataTableContainer()
+        private void GetSourceDataTableContainer()
         {
             _sourceData.GetSourceDataTable();
         }
+
+        private void GetSourceDataPatternsContainer()
+        {
+            _sourceData.GetSourceDataPatterns();
+        }
+        
+        public void AddWorkPatternInPatternsContainer(List<string> patternsNameFromTable, List<string> patternsNameFromDirectory)
+        {
+            
+        }
+
         
     }
 }

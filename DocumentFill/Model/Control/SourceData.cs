@@ -46,5 +46,7 @@ namespace DocumentFill.Model.Control
             var d = Directory.GetFiles(PatternsFolderPath, "*.doc", SearchOption.TopDirectoryOnly).ToList();
             SourceDataPatterns = d;
         }
+        
+
     }
 }
