@@ -15,10 +15,10 @@ namespace DocumentFill.Model
             Table = table;
         }
 
-        private Dictionary<int, string> _keyInTable;
+        private Dictionary<string, int> _keyInTable;
         private List<string>            _patternName;
         public  DataTable               Table { get; set; }
-        public Dictionary<int, string> KeyInTable
+        public Dictionary<string, int> KeyInTable
         {
             get { return _keyInTable ??= AddDataInKeyInTable(Table); }
             private set => _keyInTable = value;
@@ -29,14 +29,14 @@ namespace DocumentFill.Model
             private set => _patternName = value;
         }
 
-        private Dictionary<int, String> AddDataInKeyInTable(DataTable table)
+        private Dictionary<string, int> AddDataInKeyInTable(DataTable table)
         {
-            Dictionary<int, String> keyInTable = new Dictionary<int, string>();
+            Dictionary<string, int> keyInTable = new Dictionary<string, int>();
             for (int i = 0; i < table.Rows[3].ItemArray.Length; i++)
             {
                 if (!String.IsNullOrEmpty(table.Rows[3][i].ToString()))
                 {
-                    keyInTable.Add(i, table.Rows[3][i].ToString());
+                    keyInTable.Add(table.Rows[3][i].ToString(), i);
                 }
             }
             return keyInTable;

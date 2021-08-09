@@ -4,8 +4,9 @@ namespace DocumentFill.Model.Wrapper
 {
     public interface IFileInfo
     {
-        string FullName { get; }
-        string Name     { get; }
+        string FullName      { get; }
+        string Name          { get; }
+        string DirectoryName { get; }
     }
 
     public class FileInfoWrapper : IFileInfo
@@ -17,7 +18,8 @@ namespace DocumentFill.Model.Wrapper
             _fileInfo = fileInfo;
         }
 
-        public string FullName => _fileInfo.FullName;
-        public string Name => _fileInfo.Name;
+        public string FullName      => _fileInfo.FullName;
+        public string Name          => _fileInfo.Name;
+        public string DirectoryName => _fileInfo.DirectoryName;
     }
 }

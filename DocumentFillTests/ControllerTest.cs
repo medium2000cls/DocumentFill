@@ -8,9 +8,12 @@ namespace DocumentFillTests
 {
     public class ControllerTest
     {
+        private Mock<Controller> controlerMock;
+        
         [SetUp]
         public void Setup()
         {
+            controlerMock = new Mock<Controller>() {CallBase = true};
         }
 
         [Test]
@@ -26,13 +29,18 @@ namespace DocumentFillTests
                @"D:\\Temp\q w.docx", @"D:\\Temp\qwer.docx", @"D:\\Temp\qw er.docx"
             };
 
-            Mock<Controller> controlerMock = new Mock<Controller>((string) null, (string) null, (DataTable) null,
-                (List<string>) null, (List<IPattern>) null) {CallBase = true};
             //Act          Действие
             var result = controlerMock.Object.GetWorkPattern(patternsNameFromTable, patternsNameFromDirectory);
             //Assert       Результат
             Assert.That(result, !Is.Null.Or.Empty, "Значение не должно быть Null или пустым");
             Assert.That(result.Count, Is.EqualTo(2), "Колличество должно быть равно 2");
         }
+
+        [Test]
+        public void FillDocument_DataProcessing_PdfFileComplite()
+        {
+            controlerMock.Object.FillDocument((string) null, 5);
+        }
+        
     }
 }

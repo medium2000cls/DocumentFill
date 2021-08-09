@@ -7,11 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="Working on the project">
-      <change afterPath="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" afterDir="false" />
+    <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocumentFill.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +37,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/73D10199-BCF7-4D23-90F0-FBE9F2E2FB6B/2F/DataTable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/024801C1-5B92-409B-8FA4-2FA2FBDF04A9/64/b1ba0c74/FileInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/SimpleWorkItemDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/CompositeWorkItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/36/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/WorkItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/13A/Thread.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -44,7 +50,6 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
@@ -60,12 +65,14 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/Controler.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
       <option value="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w5QU25dE4jYFs8jc0miumT2MXG" />
@@ -128,6 +135,7 @@
       <workItem from="1628101195618" duration="2547000" />
       <workItem from="1628111812966" duration="3484000" />
       <workItem from="1628273792143" duration="9053000" />
+      <workItem from="1628467209331" duration="3555000" />
     </task>
     <task id="LOCAL-00001" summary="Работа над проектом">
       <created>1627746109734</created>
@@ -171,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628280841684</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Работа над проектом">
+      <created>1628446243032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628446243032</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,40 +210,8 @@
     <MESSAGE value="Работа на проектом" />
     <MESSAGE value="Working" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.DocumentFill/.idea/workspace.xml&#10;#&#9;DocumentFill/DocumentFill.csproj" />
-    <MESSAGE value="Работа над проектом" />
     <MESSAGE value="Working on the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs</url>
-          <line>32</line>
-          <properties documentPath="D:\Projects\DocumentFill\DocumentFill\Model\Realization\DataTableContainer.cs" initialLine="55" containingFunctionPresentation="method 'AddDataInKeyInTable'">
-            <startOffsets>
-              <option value="973" />
-            </startOffsets>
-            <endOffsets>
-              <option value="974" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs</url>
-          <line>36</line>
-          <properties documentPath="D:\Projects\DocumentFill\DocumentFill\Model\Realization\DataTableContainer.cs" initialLine="59" containingFunctionPresentation="method 'AddDataInKeyInTable'">
-            <startOffsets>
-              <option value="1154" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1209" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Работа над проектом" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа над проектом" />
   </component>
 </project>

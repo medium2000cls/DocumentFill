@@ -20,21 +20,10 @@ namespace DocumentFill.Model
         private List<string> _keyInPattern;
         public  string       Name            => PatternFileInfo.Name;
         public  IFileInfo    PatternFileInfo { get; }
-        
         public List<string> KeyInPattern
         {
-            get
-            {
-                if (_keyInPattern == null)
-                {
-                    _keyInPattern = FillingKeyInPattern(PatternFileInfo);
-                    return _keyInPattern;
-                }
-                else
-                {
-                    return _keyInPattern;
-                }
-            }
+            get { return _keyInPattern ??= FillingKeyInPattern(PatternFileInfo); }
+            private set => _keyInPattern = value;
         }
 
         /// <summary>

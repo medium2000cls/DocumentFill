@@ -19,7 +19,7 @@ namespace DocumentFill.Model
         /// <remarks>
         /// Ключ - номер столбца в таблице, значение - заменяемое имя
         /// </remarks>
-        Dictionary<int, String> KeyInTable { get; }
+        Dictionary<string, int> KeyInTable { get; }
         /// <summary>
         /// Список всех указанных шаблонов
         /// </summary>
