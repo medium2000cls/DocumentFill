@@ -35,12 +35,6 @@ namespace DocumentFillTests
             Assert.That(result, !Is.Null.Or.Empty, "Значение не должно быть Null или пустым");
             Assert.That(result.Count, Is.EqualTo(2), "Колличество должно быть равно 2");
         }
-
-        [Test]
-        public void FillDocument_DataProcessing_PdfFileComplite()
-        {
-            controlerMock.Object.FillDocument((string) null, 5);
-        }
-        
+       
     }
 }

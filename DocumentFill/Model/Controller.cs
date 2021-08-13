@@ -4,6 +4,8 @@ using System.IO;
 using System.Text.RegularExpressions;
 using DocumentFill.Model.External;
 using DocumentFill.Model.Wrapper;
+using Xceed.Words.NET;
+using Formatting = Xceed.Document.NET.Formatting;
 
 namespace DocumentFill.Model
 {
@@ -53,27 +55,6 @@ namespace DocumentFill.Model
             }
             return patterns;
         }
-        
-        public void FillDocument(string targetDirectoryPath, int line)
-        {
-            //Узнаю шаблон
-            var patternFromTable = _dataTableContainer.Table.Rows[line][0].ToString();
-            var pattern = _patterns.Find(s => s.Name == patternFromTable);
-            //Копирую шаблон
-            var newFileFullName = targetDirectoryPath + pattern.Name;
-            File.Copy(pattern.PatternFileInfo.FullName, newFileFullName);
-            //Получаю информацию о новом файле
-            IFileInfo newFile = new FileInfoWrapper(new FileInfo(newFileFullName));
-            //Достаю из таблицы название файла и подписываю файл
-            int columnIndex;
-            string newName = newFile.Name;
-            if (_dataTableContainer.KeyInTable.ContainsKey("Название файла"))
-            {
-                columnIndex = _dataTableContainer.KeyInTable["Название файла"];
-                newName = newFile.DirectoryName + @"/" + _dataTableContainer.Table.Rows[4][columnIndex].ToString() + ".docx";
-            }
-            File.Replace(newFile.FullName, newName, newFile.FullName + "backup");
-            
-        }
+
     }
 }
