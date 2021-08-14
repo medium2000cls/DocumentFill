@@ -40,7 +40,7 @@ namespace DocumentFill.Model
             _pattern = Patterns.Find(s => s.Name == patternFromTable);
             if (_pattern != null)
             {
-                NewDocument = NewFile(_pattern);
+                NewDocument = NewFile(_pattern, line);
                 ReplaceAllKeys(line);
                 return true;
             }
@@ -54,15 +54,16 @@ namespace DocumentFill.Model
         /// Создать новый документ
         /// </summary>
         /// <param name="pattern">Шаблон документа</param>
+        /// <param name="line">Строка в таблице из которой выполняется чтение</param>
         /// <returns>Новый документ</returns>
-        public virtual IFileInfo NewFile(IPattern pattern)
+        public virtual IFileInfo NewFile(IPattern pattern, int line)
         {
             //Копирую шаблон
-            var newFileFullName = TargetDirectoryPath + pattern.Name;
+            var newFileFullName = TargetDirectoryPath + pattern.Name + line;
             File.Copy(pattern.PatternFileInfo.FullName, newFileFullName);
 
             //Получаю информацию о новом файле
-            IFileInfo newFile = new FileInfoWrapper(new FileInfo(newFileFullName));
+            IFileInfo newFile = new FileInfoWrapper(newFileFullName);
 
             //Достаю из таблицы название файла и подписываю файл
             int columnIndex;
@@ -73,7 +74,7 @@ namespace DocumentFill.Model
                 newName = newFile.DirectoryName + @"/" + DataTableContainer.Table.Rows[4][columnIndex] +
                           ".docx";
             }
-            File.Replace(newFile.FullName, newName, newFile.FullName + "backup");
+            newFile.Replace(newName, newFile.FullName + "backup");
             return newFile;
         }
 

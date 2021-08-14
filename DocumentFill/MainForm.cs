@@ -67,19 +67,19 @@ namespace DocumentFill.View
             {
                 _startStop = !_startStop;
                 btnStart.Text = "Стоп";
-                if (StartEventHandler != null) StartEventHandler(this, EventArgs.Empty);
+                StartEventHandler(this, EventArgs.Empty);
             }
             else
             {
                 _startStop = !_startStop;
                 btnStart.Text = "Старт";
-                if (StopEventHandler != null) StopEventHandler(this, EventArgs.Empty);
+                StopEventHandler(this, EventArgs.Empty);
             }
         }
 
         private void btnReload_Click(object sender, EventArgs e)
         {
-            if (ReloadEventHandler != null) ReloadEventHandler(this, EventArgs.Empty);
+          ReloadEventHandler(this, EventArgs.Empty);
         }
 
         private void dataStorage_Click(object sender, EventArgs e)

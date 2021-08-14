@@ -8,8 +8,7 @@ namespace DocumentFill.Model
         IDataTableContainer DataTableContainer  { get; }
         List<IPattern>      Patterns            { get; }
         string              TargetDirectoryPath { get; }
-        IFileInfo    NewDocument         { get; }
-
+        IFileInfo           NewDocument         { get; }
 
         /// <summary>
         /// Заполнение документа

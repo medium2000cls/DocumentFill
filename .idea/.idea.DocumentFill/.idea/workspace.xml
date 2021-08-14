@@ -8,15 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="849e0941-af21-4451-b349-777e655d15d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/IDocumentFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DocumentFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocumentFill/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/DocumentFill.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/MainForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/IDocumentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/IDocumentFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Realization/DocumentFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Realization/DocumentFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocumentFill/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocumentFill/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +34,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/73D10199-BCF7-4D23-90F0-FBE9F2E2FB6B/2F/DataTable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/024801C1-5B92-409B-8FA4-2FA2FBDF04A9/64/b1ba0c74/FileInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/SimpleWorkItemDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/CompositeWorkItem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/36/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/nunit/nunit/c933a883ea25263ec575a654dae69fa38000edd9/src/NUnitFramework/framework/Internal/Execution/WorkItem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6D3782FC-4D67-4E57-94E1-F6BE735A45FD/13A/Thread.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/Properties/Settings.Designer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F7F801F8-FC6B-4F5B-9700-341F87C92AC6/13/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/SharedViewLogic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.App/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.UI/Main.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamDay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/ExamInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/Instructor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/DrivingLicenceInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/FillPdf-master/Selma/Selma.Contracts/Entities/CandidateInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/3D5/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -51,31 +54,32 @@
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainer.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainerFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/DocumentFactory.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/PatternFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/PatternsContainerFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IPatternsContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/DataTableContainerFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Wrapper/IFileInfo.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Wrapper/IDocX.cs" />
+      <option value="$PROJECT_DIR$/DocumentFillTests/PatternTests.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Model/IDataTableContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFillTests/UnitTest1.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/External/SourceData.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/External/ISourceData.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DocumentFactory.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/MainForm.Designer.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocumentFactory.cs" />
+      <option value="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/MainForm.cs" />
       <option value="$PROJECT_DIR$/DocumentFill/Program.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Stapler.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Controler.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IPattern.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/PatternsContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/SourceData.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Control/ISourceData.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocument.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Wrapper/FileInfoWrapper.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DataTableContainer.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Pattern.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Controller.cs" />
-      <option value="$PROJECT_DIR$/DocumentFillTests/ControllerTest.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/Document.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/Realization/DocumentFactory.cs" />
-      <option value="$PROJECT_DIR$/DocumentFill/Model/IDocumentFactory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1w5QU25dE4jYFs8jc0miumT2MXG" />
@@ -89,8 +93,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34997028" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -98,10 +102,9 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.DocumentFill">
+  <component name="RunManager">
     <configuration name="DocumentFill" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -134,14 +137,8 @@
       <workItem from="1627760184179" duration="128000" />
       <workItem from="1627762654649" duration="488000" />
       <workItem from="1627763575741" duration="8311000" />
-      <workItem from="1627831404314" duration="12728000" />
-      <workItem from="1628101195618" duration="2547000" />
-      <workItem from="1628111812966" duration="3484000" />
-      <workItem from="1628273792143" duration="9053000" />
-      <workItem from="1628467209331" duration="14643000" />
-      <workItem from="1628654955062" duration="838000" />
-      <workItem from="1628712119363" duration="4000" />
-      <workItem from="1628872723754" duration="27000" />
+      <workItem from="1628927892994" duration="53000" />
+      <workItem from="1628928529687" duration="6468000" />
     </task>
     <task id="LOCAL-00001" summary="Работа над проектом">
       <created>1627746109734</created>
@@ -172,34 +169,20 @@
       <updated>1627751073198</updated>
     </task>
     <task id="LOCAL-00005" summary="Работа над проектом">
-      <created>1627846220561</created>
+      <created>1628416108212</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1627846220561</updated>
+      <updated>1628416108212</updated>
     </task>
-    <task id="LOCAL-00006" summary="Working on the project">
-      <created>1628280841684</created>
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.DocumentFill/.idea/workspace.xml&#10;#&#9;DocumentFill/DocumentFill.csproj">
+      <created>1627758700196</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1628280841684</updated>
+      <updated>1627758700196</updated>
     </task>
-    <task id="LOCAL-00007" summary="Работа над проектом">
-      <created>1628446243032</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1628446243032</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Работа над проектом">
-      <created>1628470811360</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1628470811360</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,8 +206,31 @@
     <MESSAGE value="Работа на проектом" />
     <MESSAGE value="Working" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.DocumentFill/.idea/workspace.xml&#10;#&#9;DocumentFill/DocumentFill.csproj" />
-    <MESSAGE value="Working on the project" />
     <MESSAGE value="Работа над проектом" />
     <option name="LAST_COMMIT_MESSAGE" value="Работа над проектом" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DocumentFill/Model/Controller.cs</url>
+          <line>27</line>
+          <properties documentPath="D:\Проекты\DocumentFill\DocumentFill\Model\Controller.cs" initialLine="27" containingFunctionPresentation="method 'MainFormOnStartEventHandler'">
+            <startOffsets>
+              <option value="828" />
+            </startOffsets>
+            <endOffsets>
+              <option value="846" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#Castle.Proxies.IFileInfoProxy" memberName="Interceptor" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

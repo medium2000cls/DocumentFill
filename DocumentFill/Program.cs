@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DocumentFill.Model;
 using DocumentFill.View;
 
 namespace DocumentFill
@@ -15,10 +16,12 @@ namespace DocumentFill
         [STAThread]
         static void Main()
         {
+            MainForm mainForm = new MainForm();
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            // Controller controller = new Controller(mainForm);
+            Application.Run(mainForm);
         }
     }
 }
