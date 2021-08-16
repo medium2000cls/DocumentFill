@@ -58,7 +58,7 @@ namespace DocumentFill.Model.External
 
         public List<string> GetSourceDataPatterns()
         {
-            List<string> d = Directory.GetFiles(PatternsFolderPath, "*.doc", SearchOption.TopDirectoryOnly).ToList();
+            List<string> d = Directory.GetFiles(PatternsFolderPath, "*.doc*", SearchOption.TopDirectoryOnly).ToList();
             return d;
         }
         

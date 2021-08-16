@@ -16,11 +16,14 @@ namespace DocumentFill
         [STAThread]
         static void Main()
         {
-            MainForm mainForm = new MainForm();
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Controller controller = new Controller(mainForm);
+            
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+            
+            var mainForm = new MainForm();
+            var controller = new Controller(mainForm);
             Application.Run(mainForm);
         }
     }

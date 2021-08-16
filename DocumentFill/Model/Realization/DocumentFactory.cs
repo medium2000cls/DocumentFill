@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Text.RegularExpressions;
 using DocumentFill.Model.Wrapper;
@@ -19,14 +20,14 @@ namespace DocumentFill.Model
             TargetDirectoryPath = targetDirectoryPath;
         }
 
-        public  IDataTableContainer DataTableContainer  { get; }
-        public  List<IPattern>      Patterns            { get; }
-        public  string              TargetDirectoryPath { get; }
-        public  IFileInfo           NewDocument         { get; private set; }
+        public IDataTableContainer DataTableContainer  { get; }
+        public List<IPattern>      Patterns            { get; }
+        public string              TargetDirectoryPath { get; }
+        public IFileInfo           NewDocument         { get; private set; }
 
         #region Приватные переменные
 
-        private IPattern  _pattern;
+        private IPattern _pattern;
 
         #endregion
 
@@ -59,22 +60,22 @@ namespace DocumentFill.Model
         public virtual IFileInfo NewFile(IPattern pattern, int line)
         {
             //Копирую шаблон
-            var newFileFullName = TargetDirectoryPath + pattern.Name + line;
-            File.Copy(pattern.PatternFileInfo.FullName, newFileFullName);
+            var newFileFullName = TargetDirectoryPath + @"\" + line + pattern.Name;
+            File.Copy(pattern.PatternFileInfo.FullName, newFileFullName, true);
 
             //Получаю информацию о новом файле
             IFileInfo newFile = new FileInfoWrapper(newFileFullName);
 
             //Достаю из таблицы название файла и подписываю файл
             int columnIndex;
-            string newName = newFile.Name;
+            string newName = newFile.DirectoryName + @"\" + newFile.Name;
             if (DataTableContainer.KeyInTable.ContainsKey("Название файла"))
             {
                 columnIndex = DataTableContainer.KeyInTable["Название файла"];
-                newName = newFile.DirectoryName + @"/" + DataTableContainer.Table.Rows[4][columnIndex] +
+                newName = newFile.DirectoryName + @"\" + DataTableContainer.Table.Rows[4][columnIndex] +
                           ".docx";
             }
-            newFile.Replace(newName, newFile.FullName + "backup");
+            newFile.MoveTo(newName);
             return newFile;
         }
 

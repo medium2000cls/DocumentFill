@@ -46,15 +46,15 @@ namespace DocumentFill.Model
 
         #region Компоненты
 
-        private          string              _fileTablePath;
-        private          string              _patternsFolderPath;
-        private          DataTable           _dataTable;
-        private          List<string>        _dataPatterns;
-        private          List<IPattern>      _patterns;
-        private          ISourceData         _sourceData;
-        private          IDataTableContainer _dataTableContainer;
-        private          IDocumentFactory    _documentFactory;
-        private readonly MainForm            _mainForm;
+        private string              _fileTablePath;
+        private string              _patternsFolderPath;
+        private DataTable           _dataTable;
+        private List<string>        _dataPatterns;
+        private List<IPattern>      _patterns;
+        private ISourceData         _sourceData;
+        private IDataTableContainer _dataTableContainer;
+        private IDocumentFactory    _documentFactory;
+        private MainForm            _mainForm;
 
         #endregion
 
@@ -71,8 +71,8 @@ namespace DocumentFill.Model
         /// </summary>
         public void Initialise()
         {
-            _fileTablePath = null;
-            _patternsFolderPath = null;
+            _fileTablePath = _mainForm.DataStorageText;
+            _patternsFolderPath = _mainForm.FolderDocTemplateText;
             _dataTable = null;
             _dataPatterns = null;
             _sourceData = null;
@@ -82,7 +82,7 @@ namespace DocumentFill.Model
 
 
             _sourceData = new SourceData(_dataTable, _dataPatterns, _fileTablePath, _patternsFolderPath);
-            _dataTableContainer = new DataTableContainer(_dataTable);
+            _dataTableContainer = new DataTableContainer(_sourceData.SourceDataTable);
             _patterns = GetWorkPattern(_dataTableContainer.PatternName, _sourceData.SourceDataPatterns);
             _documentFactory = new DocumentFactory(_dataTableContainer, _patterns, _mainForm.FinalFolderText);
         }
